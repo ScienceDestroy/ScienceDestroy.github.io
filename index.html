@@ -1,25 +1,62 @@
-<?php
-error_reporting(-1);
-ini_set('display_errors',1);
-header('Content-Type: text/html; charset=utf-8');
-$page = (isset($_GET['page']) ? $_GET['page'] : 'main');
-?>
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>Всем приветики</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cloud Technologies</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-<header>
-    <nav>
-        <a href="index.php?page=main">Главная страница сайта</a> | 
-        <a href="index.php?page=contacts">Контакты</a>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Cloud Technologies</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="https://vk.com/away.php?to=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F16WsitvovRujyi-lVY0q5snzjPbbeS9Bc&amp;cc_key=">Ссылка на Google Disk с заданиями</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://vk.com/maks.saragutdinov">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1Rm9_zHh6jY-xjANOS68DSEhePt4PxwV6/view?usp=sharing">Ссылка на лабы</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-</header>
-
-<?php include basename($page).'.php'; ?>
-
-<footer>
-    Здесь есть подвал, но кого это интересует???(
-</footer>
+    <div data-bs-parallax-bg="true" style="height: 157px;background: url(&quot;https://images.unsplash.com/photo-1463995439889-6cc080aaf7dd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1567&amp;q=80&quot;) center / cover;"></div>
+    <div class="container"></div>
+    <div class="features-boxed">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Features </h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-cloud icon"></i>
+                        <h3 class="name">Что такое облако?</h3>
+                        <p class="description">Что такое облачные технологии и для чего они нужны нам в современном мире.</p><a class="learn-more" href="#"><br>Узнать больше»<br><br></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-clock-o icon"></i>
+                        <h3 class="name">Расписание сессии</h3>
+                        <p class="description">Вам никогда не было интересно когда начинается сессия? Самое время узнать это!</p><a class="learn-more" href="#">Узнать больше»</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-list-alt icon"></i>
+                        <h3 class="name">Курсовая по ВУИ</h3>
+                        <p class="description">Да, она будет 26 числа кстати</p><a class="learn-more"><br>Узнать больше»<br><br></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-bs-parallax-bg="true" style="height: 500px;background: url(&quot;https://images.unsplash.com/photo-1463995439889-6cc080aaf7dd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1567&amp;q=80&quot;) center / cover;"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
 </body>
+
 </html>
