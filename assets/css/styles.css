@@ -1,0 +1,28 @@
+.wrap {
+  height: 0px;
+  background: rgba(255,255,255,0);
+}
+
+.header {
+  background: rgba(100,100,100,1);
+  height: 80px;
+  top: -80px;
+  transition: top 1s;
+  text-align: center;
+}
+
+.header.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(100,100,100,0.75);
+}
+
+.header.fixed ~ .wrap {
+  margin-top: 80px;
+}
+
+.hover : hover {
+  background-color: white !important;
+}
+
