@@ -26,3 +26,9 @@
   background-color: white !important;
 }
 
+@media (max-width:1399px) {
+  .img-h {
+    visibility: hidden !important;
+  }
+}
+
